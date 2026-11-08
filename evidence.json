@@ -1,8 +1,12 @@
 {
   "skill_zip_sha256": "6276be4a33f6def6091902d0a8ae44d1485f8667282871d186537a50d68a44c7",
-  "generation": "same fixed skill with producer self-review; additional parent cross-browser QA requested producer reinspection before publication; no parent reader edits",
+  "generation": "Initial fixed-skill production with producer self-review and publisher cross-browser QA. Subsequently updated only for user-authorized provisional video embedding.",
   "reference_materials_used": true,
-  "final_explainer_videos": "awaiting recording",
+  "final_explainer_videos": {
+    "isocchi-integration": "supplied demonstration provisionally embedded",
+    "isocchi-coloring": "supplied demonstration provisionally embedded",
+    "smitch-no155": "awaiting recording"
+  },
   "cases": [
     {
       "case": "smitch-no155",
@@ -210,6 +214,95 @@
         },
         {
           "path": "isocchi-integration/assets/style.css",
+          "sha256": "184a8d60d3679e5e0f3441ab1a07ac93690b4f9948318452b03a9a43ec35cf1e",
+          "bytes": 5057
+        },
+        {
+          "path": "isocchi-integration/downloads/build_report.py",
+          "sha256": "c20967c854cff773213a2e17c8191ccb89e742f14e57a06a8ddc796ea3000313",
+          "bytes": 6218
+        },
+        {
+          "path": "isocchi-integration/downloads/isocchi-ai-kit.zip",
+          "sha256": "b3c02f3575ff5a16bd14f9dc9fc3dc751a9530db490e85db17f1a2e5f84a0c37",
+          "bytes": 40097985
+        },
+        {
+          "path": "isocchi-integration/downloads/report.html",
+          "sha256": "a5b65e9f67e6c1f54fb9df735e9d22fadc52f040a66fff867ee9cea57a4af464",
+          "bytes": 3907
+        },
+        {
+          "path": "isocchi-integration/downloads/sales.csv",
+          "sha256": "cd6f704dc446df00a4518dfb4c7a41dc27ba15ca6886f947edddb94bc2bd5537",
+          "bytes": 273
+        },
+        {
+          "path": "isocchi-integration/index.html",
+          "sha256": "47eeae95f0d3f144b839c4fc19e16425a552fdbfc221208d8e29cf5b0535d586",
+          "bytes": 15995
+        },
+        {
+          "path": "isocchi-integration/assets/explainer.mp4",
+          "sha256": "bb60194511df827872546603cd6289d4dad565d92a3a7abd79b53598e0820f77",
+          "bytes": 30357065
+        },
+        {
+          "path": "isocchi-integration/assets/explainer-poster.jpg",
+          "sha256": "6e33dbb1fde48502cf7a661bd6105e24045088f844750cfa84c0bb4189dbe81c",
+          "bytes": 262356
+        }
+      ],
+      "filming_script_sha256": "fdc274a7d2487d68e82d9998f8c140fc8695cedaa935bb5953c2add9eceac544",
+      "parent_reader_edits": true,
+      "initial_reader_files": [
+        {
+          "path": "isocchi-integration/assets/app.js",
+          "sha256": "84d9cb95962d48d42b304f561aa53e2280fdfefc39c081faf8e90669564ffd02",
+          "bytes": 907
+        },
+        {
+          "path": "isocchi-integration/assets/banner.png",
+          "sha256": "9099223648f5a02795b301d3e94285ba2f3792ce752cfd80c6fb957d06e9c2fb",
+          "bytes": 2189332
+        },
+        {
+          "path": "isocchi-integration/assets/claude-code.png",
+          "sha256": "d4e5e8e9990ac52f147a74ae80b9e69cdc612264b84a76cdb5c43b53b73a1707",
+          "bytes": 18001
+        },
+        {
+          "path": "isocchi-integration/assets/creator-check.png",
+          "sha256": "10cb06bb5962159af2f72d48c4a129662a746e0d0834a2d93a3e350cbc501b28",
+          "bytes": 2127091
+        },
+        {
+          "path": "isocchi-integration/assets/cta.png",
+          "sha256": "2eb62d3d03229298ba494f220cfaf53c87040de54ddc93142a5317ed92b7e085",
+          "bytes": 1938451
+        },
+        {
+          "path": "isocchi-integration/assets/input-map.png",
+          "sha256": "bf1fc1c0189d3333985e9b8042c2da5726b6e0eb2fff79ca3f46a96b1aad9b60",
+          "bytes": 1534801
+        },
+        {
+          "path": "isocchi-integration/assets/report-preview.png",
+          "sha256": "58aa345f92d052383b89fa3f874eae619bd6be69f873e7bf8ff987fe0508fef6",
+          "bytes": 18170
+        },
+        {
+          "path": "isocchi-integration/assets/report-products.png",
+          "sha256": "59429ffc82734c11948885e8c2fad066e6538b75a3afb43252c7fc55ca6ae85c",
+          "bytes": 46533
+        },
+        {
+          "path": "isocchi-integration/assets/roles.png",
+          "sha256": "e38a67ed55947d27dff5645b1e90c9d0739daaa8baee513021d06d72cdf17500",
+          "bytes": 2079494
+        },
+        {
+          "path": "isocchi-integration/assets/style.css",
           "sha256": "33801c5f7924c94f17cd87762a74c20e263e56f30da23d47f390c70388409846",
           "bytes": 4581
         },
@@ -239,8 +332,8 @@
           "bytes": 15656
         }
       ],
-      "filming_script_sha256": "fdc274a7d2487d68e82d9998f8c140fc8695cedaa935bb5953c2add9eceac544",
-      "parent_reader_edits": false
+      "initial_parent_reader_edits": false,
+      "published_update": "User requested provisional video embedding after initial skill generation; reader text/prompts/images preserved, video section/CSS/offline kit updated."
     },
     {
       "case": "isocchi-coloring",
@@ -269,6 +362,130 @@
         }
       },
       "reader_files": [
+        {
+          "path": "isocchi-coloring/assets/app.js",
+          "sha256": "c11b33172822b271e867d21813fc5b7fadc480772d57ac305f93c1227c81db03",
+          "bytes": 1463
+        },
+        {
+          "path": "isocchi-coloring/assets/banner-square.png",
+          "sha256": "26fa1ed5ea7a42c265d3b1b212090ae3e52f0dc9dad84b69ff36ed5633b3ac9c",
+          "bytes": 3169258
+        },
+        {
+          "path": "isocchi-coloring/assets/chatgpt.svg",
+          "sha256": "2021463df9935dda89cef407aa564bced9d83b4f9b6ae8945d649e56676624f0",
+          "bytes": 4381
+        },
+        {
+          "path": "isocchi-coloring/assets/cta-line.png",
+          "sha256": "91503a9e13e137dc0e3544adbf9d95c0d5336296a966543397132c7a843b1fdd",
+          "bytes": 3115795
+        },
+        {
+          "path": "isocchi-coloring/assets/diagram-check.png",
+          "sha256": "b52af0bf2c4538ac7ee4e6362f06b8f20e237e2dc83aae15b7f403dda6d34110",
+          "bytes": 2617639
+        },
+        {
+          "path": "isocchi-coloring/assets/diagram-listing.png",
+          "sha256": "67dc7312aa5265a8fb97d632b115c06ea74fc48893a20c0790a64a0e474a9060",
+          "bytes": 2582889
+        },
+        {
+          "path": "isocchi-coloring/assets/pdf-preview.png",
+          "sha256": "5d55d594e4528cf26a8721406d9c94d9912b0bb3729b045757e945250425767d",
+          "bytes": 887194
+        },
+        {
+          "path": "isocchi-coloring/assets/scene-check.png",
+          "sha256": "e7d21ccf612a78fa44a862d09c40a5727ee5d698eb673854cb5c6b3ce6d1c08a",
+          "bytes": 2602094
+        },
+        {
+          "path": "isocchi-coloring/assets/scene-night.png",
+          "sha256": "8918b8e6f96e72bf708d2bb4ebb0aeb3f09c98a1f8d0e37aba0bb6f9b8025071",
+          "bytes": 2230215
+        },
+        {
+          "path": "isocchi-coloring/assets/screen-chatgpt-files.jpg",
+          "sha256": "c4dfbd3be2161e0df8bde372213a0c75e9684cd918d81a503a9f29ef09e986f2",
+          "bytes": 14454
+        },
+        {
+          "path": "isocchi-coloring/assets/style.css",
+          "sha256": "a7b95a056abd5ca7caf6bb5703b4381bdfd703b6b21d65e53d1e236b7ead6e1c",
+          "bytes": 6057
+        },
+        {
+          "path": "isocchi-coloring/downloads/coloring-master.png",
+          "sha256": "e702d5d818835ab7ff07c88caca5df602d6b0c830fcc3b670e6f4a127db3492b",
+          "bytes": 2242431
+        },
+        {
+          "path": "isocchi-coloring/downloads/create-prompt.txt",
+          "sha256": "96ad32edd5308e48834a0777f0b042442ddb4276ee75a35c7d46e511f17bad49",
+          "bytes": 1082
+        },
+        {
+          "path": "isocchi-coloring/downloads/fix-prompt.txt",
+          "sha256": "ff452a8557152878c28c98e827fa8d85f9f6f7d77a2bb249570b3a00b4b6a48d",
+          "bytes": 628
+        },
+        {
+          "path": "isocchi-coloring/downloads/isocchi-coloring-kit.zip",
+          "sha256": "7a1b5d39eb5ff97b64cb73a69ac79bc09183ed5106b3d326cda303cb40423788",
+          "bytes": 72768570
+        },
+        {
+          "path": "isocchi-coloring/downloads/japan-bookmarks-A4.pdf",
+          "sha256": "038b711074e465f5456adec46c4fc2c850a2ce6758ab6643838c36252b05ec66",
+          "bytes": 2340670
+        },
+        {
+          "path": "isocchi-coloring/downloads/japan-bookmarks-Letter.pdf",
+          "sha256": "fdad22d2b9d993b0ceefdd8ecfc3aae9bf2894207a6ddf6ff08ef1f792b9f652",
+          "bytes": 2340657
+        },
+        {
+          "path": "isocchi-coloring/downloads/listing-en.txt",
+          "sha256": "18798d98d465c59828373907920f153f7ab74b83ac2116e6224a77176ad58c10",
+          "bytes": 1197
+        },
+        {
+          "path": "isocchi-coloring/downloads/night-prompt.txt",
+          "sha256": "f20466e95079857a84476365474f158e2a5cc6b88d9a2dd17b258243fe0dfd49",
+          "bytes": 1692
+        },
+        {
+          "path": "isocchi-coloring/downloads/practice-prompt.txt",
+          "sha256": "4390ae0256f6e592ff3b4f2d22547c14ad3ab9ac92c6fcec62059ccdd5b43773",
+          "bytes": 2045
+        },
+        {
+          "path": "isocchi-coloring/downloads/review-prompt.txt",
+          "sha256": "95823e1220da56ed4cef79be1ae39b27966f8c901407f2367d4a41418b4e11b9",
+          "bytes": 1023
+        },
+        {
+          "path": "isocchi-coloring/index.html",
+          "sha256": "3dcc9b700f86064c119c402507ef1ed62e692eb310edc70385358535aa033de1",
+          "bytes": 20402
+        },
+        {
+          "path": "isocchi-coloring/assets/explainer.mp4",
+          "sha256": "137d550b7ac7e59771de1039da59e6c5f3727833bf3383ab9f425faa24a624c2",
+          "bytes": 49570708
+        },
+        {
+          "path": "isocchi-coloring/assets/explainer-poster.jpg",
+          "sha256": "53e5a77325dbff0fe48d177ca074637f9f9a21b843a51ba005e96fb307344500",
+          "bytes": 457749
+        }
+      ],
+      "filming_script_sha256": "21c2bf01940ae055f34aee65c911a7bc62ea3d73d342d08332450b145b8d1055",
+      "parent_reader_edits": true,
+      "initial_reader_files": [
         {
           "path": "isocchi-coloring/assets/app.js",
           "sha256": "c11b33172822b271e867d21813fc5b7fadc480772d57ac305f93c1227c81db03",
@@ -380,8 +597,73 @@
           "bytes": 20024
         }
       ],
-      "filming_script_sha256": "21c2bf01940ae055f34aee65c911a7bc62ea3d73d342d08332450b145b8d1055",
-      "parent_reader_edits": false
+      "initial_parent_reader_edits": false,
+      "published_update": "User requested provisional video embedding after initial skill generation; reader text/prompts/images preserved, video section/CSS/offline kit updated."
     }
-  ]
+  ],
+  "initial_generation": "same fixed skill with producer self-review; additional parent cross-browser QA requested producer reinspection before publication; no parent reader edits",
+  "authorized_video_update": {
+    "date_jst": "2026-11-09",
+    "videos": [
+      {
+        "case": "isocchi-integration",
+        "source_name": "ChatGPTとClaudeで自動レポート作成.mp4",
+        "source_sha256": "a377a13a2f79c7b5c3e89565ea5b765a05fbaff7169d39687b1b2b7da1d468d2",
+        "source": {
+          "bytes": 30357065,
+          "duration": 297.792,
+          "width": 1728,
+          "height": 1080,
+          "video_codec": "h264",
+          "audio_codecs": [
+            "aac"
+          ]
+        },
+        "published_sha256": "bb60194511df827872546603cd6289d4dad565d92a3a7abd79b53598e0820f77",
+        "published": {
+          "bytes": 30357065,
+          "duration": 297.792,
+          "width": 1728,
+          "height": 1080,
+          "video_codec": "h264",
+          "audio_codecs": [
+            "aac"
+          ]
+        },
+        "processing": "Lossless stream copy with fast-start MP4 container"
+      },
+      {
+        "case": "isocchi-coloring",
+        "source_name": "AI塗り絵素材をEtsy出品する手順実演.mp4",
+        "source_sha256": "e765bb9b365fcea88ee7cbe00911eaf64c56c9cbf189406db93f1c1bb5e4fd75",
+        "source": {
+          "bytes": 137556800,
+          "duration": 177.449556,
+          "width": 872,
+          "height": 1920,
+          "video_codec": "h264",
+          "audio_codecs": [
+            "aac"
+          ]
+        },
+        "published_sha256": "137d550b7ac7e59771de1039da59e6c5f3727833bf3383ab9f425faa24a624c2",
+        "published": {
+          "bytes": 49570708,
+          "duration": 177.47094,
+          "width": 872,
+          "height": 1920,
+          "video_codec": "h264",
+          "audio_codecs": [
+            "aac"
+          ]
+        },
+        "processing": "H264 CRF22; AAC stream copied; no cuts, crop, scaling or added overlays"
+      }
+    ],
+    "scope": "Public video slots, responsive player CSS, offline reader kits and truthful demo status; not a new skill-generation trial.",
+    "poster_frames_seconds": {
+      "isocchi-integration": 0.5,
+      "isocchi-coloring": 120
+    }
+  }
 }
