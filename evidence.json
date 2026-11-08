@@ -1,0 +1,387 @@
+{
+  "skill_zip_sha256": "6276be4a33f6def6091902d0a8ae44d1485f8667282871d186537a50d68a44c7",
+  "generation": "same fixed skill with producer self-review; additional parent cross-browser QA requested producer reinspection before publication; no parent reader edits",
+  "reference_materials_used": true,
+  "final_explainer_videos": "awaiting recording",
+  "cases": [
+    {
+      "case": "smitch-no155",
+      "before_url": "https://smitch-ai-works.github.io/no32-japanese-bookmarks/",
+      "reader_title": "すみっち式 和風塗り絵しおり 商品化スタートブック",
+      "inputs": {
+        "script.txt": {
+          "sha256": "1c86ac6f57a953a5b7c97113ea495bb3a3550ed9b746798327fa40f739748661",
+          "bytes": 1028
+        },
+        "creator.png": {
+          "sha256": "193f99b8ab842882aab6c879031bf4a532add35be5d1e9e78e86b9bb899ec4ae",
+          "bytes": 2775384
+        },
+        "bookmarks-original.png": {
+          "sha256": "f1865695515c8ee5375d8ebf8a1e5a48586a6996a4058211e95cca5607be7967",
+          "bytes": 2221165
+        },
+        "chatgpt-prompt-desktop.png": {
+          "sha256": "ceb27b137d37de03e402f69b1b041f1d7cd69420fcaeb5df7908f5342e558021",
+          "bytes": 113916
+        },
+        "chatgpt-english-desktop.png": {
+          "sha256": "39771692961f3e6b854d6de3fb020f68d8723d130a45f2d55f5c0db793785888",
+          "bytes": 74257
+        },
+        "line-textbook.jpg": {
+          "sha256": "cc661d70f962e5a70aefc5a918009f4610c7096c34dea0740e4a7cb822875c68",
+          "bytes": 126636
+        },
+        "used-prompt-1.txt": {
+          "sha256": "ece8a4e941ce637f2c7ed6afee076fc293f98db01f9c45397914fe503726fdc7",
+          "bytes": 994
+        },
+        "used-prompt-2.txt": {
+          "sha256": "53e69771afbbe27fcdc39b718b757a15b16ed1b6110f5178b0ebea455171d07a",
+          "bytes": 1257
+        },
+        "creator-context.txt": {
+          "sha256": "a97beaa952887c7290da4537041969e27675b1a10e852355398e0537036f5ea2",
+          "bytes": 1285
+        }
+      },
+      "reader_files": [
+        {
+          "path": "smitch-no155/assets/01-generate-map.png",
+          "sha256": "c3e01fc7422616f243f0c5b92e4e23fd0879362dc8cb31b57e3584dbd1463fb8",
+          "bytes": 48895
+        },
+        {
+          "path": "smitch-no155/assets/02-check-art.png",
+          "sha256": "63536a31d8550b317909c012cbc242ba4ce6eaa8042c9dd66173e9f4c47bc594",
+          "bytes": 323836
+        },
+        {
+          "path": "smitch-no155/assets/03-etsy-map.png",
+          "sha256": "a3fcb9b228806d8f482e59738c327ee166052a65c5ef4a047d54cc15322b46a3",
+          "bytes": 2544672
+        },
+        {
+          "path": "smitch-no155/assets/app.js",
+          "sha256": "58c5bc3dd9fb2c4965fd13a2a39d69855636c36d3307f973030372c318e70fd4",
+          "bytes": 1793
+        },
+        {
+          "path": "smitch-no155/assets/banner.png",
+          "sha256": "fa4c4857f82b890b93cc9a633678c0a75ccc4dd09b4ba6a6a4a30ef3ef8e7319",
+          "bytes": 3079167
+        },
+        {
+          "path": "smitch-no155/assets/bookmarks-5-designs.png",
+          "sha256": "f1865695515c8ee5375d8ebf8a1e5a48586a6996a4058211e95cca5607be7967",
+          "bytes": 2221165
+        },
+        {
+          "path": "smitch-no155/assets/chatgpt-english-mobile-web.jpg",
+          "sha256": "db9994966f1ca02c53deaa539ba5480cacd5d6ab177ecaef55928354524b09f7",
+          "bytes": 44091
+        },
+        {
+          "path": "smitch-no155/assets/chatgpt-prompt-desktop.png",
+          "sha256": "ceb27b137d37de03e402f69b1b041f1d7cd69420fcaeb5df7908f5342e558021",
+          "bytes": 113916
+        },
+        {
+          "path": "smitch-no155/assets/chatgpt.svg",
+          "sha256": "2021463df9935dda89cef407aa564bced9d83b4f9b6ae8945d649e56676624f0",
+          "bytes": 4381
+        },
+        {
+          "path": "smitch-no155/assets/creator-review.png",
+          "sha256": "dd8c12047109862c80cbc631ae76d373aca95ead8693ba34e5547df26d08290e",
+          "bytes": 2679854
+        },
+        {
+          "path": "smitch-no155/assets/english-spec-crop.png",
+          "sha256": "5059453436ec3b2c854cbf5441ad6b9a48b51b2570d946d1ffce3ea3f69da114",
+          "bytes": 25302
+        },
+        {
+          "path": "smitch-no155/assets/line-textbook.jpg",
+          "sha256": "cc661d70f962e5a70aefc5a918009f4610c7096c34dea0740e4a7cb822875c68",
+          "bytes": 126636
+        },
+        {
+          "path": "smitch-no155/assets/style.css",
+          "sha256": "a869ff5e812366cf2e4175092e90aa5e15b291fc3b04e061dd3214a68d16edcf",
+          "bytes": 4471
+        },
+        {
+          "path": "smitch-no155/downloads/bookmarks-5-designs.png",
+          "sha256": "f1865695515c8ee5375d8ebf8a1e5a48586a6996a4058211e95cca5607be7967",
+          "bytes": 2221165
+        },
+        {
+          "path": "smitch-no155/downloads/english-listing.txt",
+          "sha256": "fffd8b78fb87abe16a7da67ce010e53d5b67c9bb7348d39f4ff0c45e79518209",
+          "bytes": 1660
+        },
+        {
+          "path": "smitch-no155/downloads/smitch-bookmark-kit.zip",
+          "sha256": "76dcdf2ff8366d1fd12c97f306fd4ee928397e89d5b0504d79eb5a31314f2a58",
+          "bytes": 13436571
+        },
+        {
+          "path": "smitch-no155/index.html",
+          "sha256": "eeb5be51652cf90e28e27891691667a046b0bcb99940fb30bd454f9b6cae973d",
+          "bytes": 16143
+        }
+      ],
+      "filming_script_sha256": "05754022b2e63cba50f4b43ee93daab561385e5d32f574e4171aff564d2833b7",
+      "parent_reader_edits": false
+    },
+    {
+      "case": "isocchi-integration",
+      "before_url": "https://majestic-heliotrope-375267.netlify.app/",
+      "reader_title": "いそっち式 AI連携 実践スタートブック",
+      "inputs": {
+        "script.txt": {
+          "sha256": "7661085242d4f612d38506e9c6865b09a2ca23f1d12816b23a193ae7b7bb5569",
+          "bytes": 1512
+        },
+        "creator-photo.png": {
+          "sha256": "db66a3a47e965299b4591509480e6e18cf048594608dbbb71971e0b5ba0d5fd2",
+          "bytes": 237434
+        },
+        "sales.csv": {
+          "sha256": "cd6f704dc446df00a4518dfb4c7a41dc27ba15ca6886f947edddb94bc2bd5537",
+          "bytes": 273
+        },
+        "reference-demo.mp4": {
+          "sha256": "a377a13a2f79c7b5c3e89565ea5b765a05fbaff7169d39687b1b2b7da1d468d2",
+          "bytes": 30357065
+        },
+        "reference-transcript.auto.txt": {
+          "sha256": "8c3b83fd1f4a0559abd60ed115dbc41c4cb9e2e713b271e3c83610fa81567870",
+          "bytes": 5568
+        }
+      },
+      "reader_files": [
+        {
+          "path": "isocchi-integration/assets/app.js",
+          "sha256": "84d9cb95962d48d42b304f561aa53e2280fdfefc39c081faf8e90669564ffd02",
+          "bytes": 907
+        },
+        {
+          "path": "isocchi-integration/assets/banner.png",
+          "sha256": "9099223648f5a02795b301d3e94285ba2f3792ce752cfd80c6fb957d06e9c2fb",
+          "bytes": 2189332
+        },
+        {
+          "path": "isocchi-integration/assets/claude-code.png",
+          "sha256": "d4e5e8e9990ac52f147a74ae80b9e69cdc612264b84a76cdb5c43b53b73a1707",
+          "bytes": 18001
+        },
+        {
+          "path": "isocchi-integration/assets/creator-check.png",
+          "sha256": "10cb06bb5962159af2f72d48c4a129662a746e0d0834a2d93a3e350cbc501b28",
+          "bytes": 2127091
+        },
+        {
+          "path": "isocchi-integration/assets/cta.png",
+          "sha256": "2eb62d3d03229298ba494f220cfaf53c87040de54ddc93142a5317ed92b7e085",
+          "bytes": 1938451
+        },
+        {
+          "path": "isocchi-integration/assets/input-map.png",
+          "sha256": "bf1fc1c0189d3333985e9b8042c2da5726b6e0eb2fff79ca3f46a96b1aad9b60",
+          "bytes": 1534801
+        },
+        {
+          "path": "isocchi-integration/assets/report-preview.png",
+          "sha256": "58aa345f92d052383b89fa3f874eae619bd6be69f873e7bf8ff987fe0508fef6",
+          "bytes": 18170
+        },
+        {
+          "path": "isocchi-integration/assets/report-products.png",
+          "sha256": "59429ffc82734c11948885e8c2fad066e6538b75a3afb43252c7fc55ca6ae85c",
+          "bytes": 46533
+        },
+        {
+          "path": "isocchi-integration/assets/roles.png",
+          "sha256": "e38a67ed55947d27dff5645b1e90c9d0739daaa8baee513021d06d72cdf17500",
+          "bytes": 2079494
+        },
+        {
+          "path": "isocchi-integration/assets/style.css",
+          "sha256": "33801c5f7924c94f17cd87762a74c20e263e56f30da23d47f390c70388409846",
+          "bytes": 4581
+        },
+        {
+          "path": "isocchi-integration/downloads/build_report.py",
+          "sha256": "c20967c854cff773213a2e17c8191ccb89e742f14e57a06a8ddc796ea3000313",
+          "bytes": 6218
+        },
+        {
+          "path": "isocchi-integration/downloads/isocchi-ai-kit.zip",
+          "sha256": "98f16a31df1f395c08e1592d0a71a6ec4b7c203638a25f76ce69b9e6a7697d41",
+          "bytes": 9513746
+        },
+        {
+          "path": "isocchi-integration/downloads/report.html",
+          "sha256": "a5b65e9f67e6c1f54fb9df735e9d22fadc52f040a66fff867ee9cea57a4af464",
+          "bytes": 3907
+        },
+        {
+          "path": "isocchi-integration/downloads/sales.csv",
+          "sha256": "cd6f704dc446df00a4518dfb4c7a41dc27ba15ca6886f947edddb94bc2bd5537",
+          "bytes": 273
+        },
+        {
+          "path": "isocchi-integration/index.html",
+          "sha256": "45859cf0428341c6102e001afda736ecd261bc40853fb97cf300764902e28360",
+          "bytes": 15656
+        }
+      ],
+      "filming_script_sha256": "fdc274a7d2487d68e82d9998f8c140fc8695cedaa935bb5953c2add9eceac544",
+      "parent_reader_edits": false
+    },
+    {
+      "case": "isocchi-coloring",
+      "before_url": "https://sprightly-narwhal-ad6a46.netlify.app/",
+      "reader_title": "いそっち式 AI塗り絵しおり販売マニュアル",
+      "inputs": {
+        "script.txt": {
+          "sha256": "8749a85a963c795012322550eb9f82e1fce8f788e17065e2799738963a86fe31",
+          "bytes": 1506
+        },
+        "creator-photo.png": {
+          "sha256": "54bbb18b1b5dba9dc9c9f2a0e72c2fecbbf48efca943f04ff12452c724f20d12",
+          "bytes": 235885
+        },
+        "creator-example.png": {
+          "sha256": "e702d5d818835ab7ff07c88caca5df602d6b0c830fcc3b670e6f4a127db3492b",
+          "bytes": 2242431
+        },
+        "reference-demo.mp4": {
+          "sha256": "e765bb9b365fcea88ee7cbe00911eaf64c56c9cbf189406db93f1c1bb5e4fd75",
+          "bytes": 137556800
+        },
+        "reference-transcript.auto.txt": {
+          "sha256": "1fb4686ffc4c3c41339df24f591bd981a2c9592cf0822498326d050d0b64be74",
+          "bytes": 3250
+        }
+      },
+      "reader_files": [
+        {
+          "path": "isocchi-coloring/assets/app.js",
+          "sha256": "c11b33172822b271e867d21813fc5b7fadc480772d57ac305f93c1227c81db03",
+          "bytes": 1463
+        },
+        {
+          "path": "isocchi-coloring/assets/banner-square.png",
+          "sha256": "26fa1ed5ea7a42c265d3b1b212090ae3e52f0dc9dad84b69ff36ed5633b3ac9c",
+          "bytes": 3169258
+        },
+        {
+          "path": "isocchi-coloring/assets/chatgpt.svg",
+          "sha256": "2021463df9935dda89cef407aa564bced9d83b4f9b6ae8945d649e56676624f0",
+          "bytes": 4381
+        },
+        {
+          "path": "isocchi-coloring/assets/cta-line.png",
+          "sha256": "91503a9e13e137dc0e3544adbf9d95c0d5336296a966543397132c7a843b1fdd",
+          "bytes": 3115795
+        },
+        {
+          "path": "isocchi-coloring/assets/diagram-check.png",
+          "sha256": "b52af0bf2c4538ac7ee4e6362f06b8f20e237e2dc83aae15b7f403dda6d34110",
+          "bytes": 2617639
+        },
+        {
+          "path": "isocchi-coloring/assets/diagram-listing.png",
+          "sha256": "67dc7312aa5265a8fb97d632b115c06ea74fc48893a20c0790a64a0e474a9060",
+          "bytes": 2582889
+        },
+        {
+          "path": "isocchi-coloring/assets/pdf-preview.png",
+          "sha256": "5d55d594e4528cf26a8721406d9c94d9912b0bb3729b045757e945250425767d",
+          "bytes": 887194
+        },
+        {
+          "path": "isocchi-coloring/assets/scene-check.png",
+          "sha256": "e7d21ccf612a78fa44a862d09c40a5727ee5d698eb673854cb5c6b3ce6d1c08a",
+          "bytes": 2602094
+        },
+        {
+          "path": "isocchi-coloring/assets/scene-night.png",
+          "sha256": "8918b8e6f96e72bf708d2bb4ebb0aeb3f09c98a1f8d0e37aba0bb6f9b8025071",
+          "bytes": 2230215
+        },
+        {
+          "path": "isocchi-coloring/assets/screen-chatgpt-files.jpg",
+          "sha256": "c4dfbd3be2161e0df8bde372213a0c75e9684cd918d81a503a9f29ef09e986f2",
+          "bytes": 14454
+        },
+        {
+          "path": "isocchi-coloring/assets/style.css",
+          "sha256": "1e94d12f93e1010d189c442fc77059e8a1227eeb2f99147328c77641505967e6",
+          "bytes": 5586
+        },
+        {
+          "path": "isocchi-coloring/downloads/coloring-master.png",
+          "sha256": "e702d5d818835ab7ff07c88caca5df602d6b0c830fcc3b670e6f4a127db3492b",
+          "bytes": 2242431
+        },
+        {
+          "path": "isocchi-coloring/downloads/create-prompt.txt",
+          "sha256": "96ad32edd5308e48834a0777f0b042442ddb4276ee75a35c7d46e511f17bad49",
+          "bytes": 1082
+        },
+        {
+          "path": "isocchi-coloring/downloads/fix-prompt.txt",
+          "sha256": "ff452a8557152878c28c98e827fa8d85f9f6f7d77a2bb249570b3a00b4b6a48d",
+          "bytes": 628
+        },
+        {
+          "path": "isocchi-coloring/downloads/isocchi-coloring-kit.zip",
+          "sha256": "febaf59df7cfa334aeffbd141c84619c5b4a7a062224e8699e51f6951c90c274",
+          "bytes": 22757149
+        },
+        {
+          "path": "isocchi-coloring/downloads/japan-bookmarks-A4.pdf",
+          "sha256": "038b711074e465f5456adec46c4fc2c850a2ce6758ab6643838c36252b05ec66",
+          "bytes": 2340670
+        },
+        {
+          "path": "isocchi-coloring/downloads/japan-bookmarks-Letter.pdf",
+          "sha256": "fdad22d2b9d993b0ceefdd8ecfc3aae9bf2894207a6ddf6ff08ef1f792b9f652",
+          "bytes": 2340657
+        },
+        {
+          "path": "isocchi-coloring/downloads/listing-en.txt",
+          "sha256": "18798d98d465c59828373907920f153f7ab74b83ac2116e6224a77176ad58c10",
+          "bytes": 1197
+        },
+        {
+          "path": "isocchi-coloring/downloads/night-prompt.txt",
+          "sha256": "f20466e95079857a84476365474f158e2a5cc6b88d9a2dd17b258243fe0dfd49",
+          "bytes": 1692
+        },
+        {
+          "path": "isocchi-coloring/downloads/practice-prompt.txt",
+          "sha256": "4390ae0256f6e592ff3b4f2d22547c14ad3ab9ac92c6fcec62059ccdd5b43773",
+          "bytes": 2045
+        },
+        {
+          "path": "isocchi-coloring/downloads/review-prompt.txt",
+          "sha256": "95823e1220da56ed4cef79be1ae39b27966f8c901407f2367d4a41418b4e11b9",
+          "bytes": 1023
+        },
+        {
+          "path": "isocchi-coloring/index.html",
+          "sha256": "0e142086f9e0efc81a8fb5c1e7ec76fad05c4801475212c08c60d540cc5e0d77",
+          "bytes": 20024
+        }
+      ],
+      "filming_script_sha256": "21c2bf01940ae055f34aee65c911a7bc62ea3d73d342d08332450b145b8d1055",
+      "parent_reader_edits": false
+    }
+  ]
+}

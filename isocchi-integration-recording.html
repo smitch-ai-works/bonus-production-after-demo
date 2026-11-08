@@ -1,0 +1,151 @@
+<!doctype html><html lang="ja"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>撮影用台本｜いそっち｜AI社員</title><style>
+:root{color-scheme:light;font-family:"Noto Sans JP","Yu Gothic",Meiryo,sans-serif;color:#20322e;background:#f5f4ef;font-synthesis:none}
+*{box-sizing:border-box}body{margin:0}main{max-width:880px;margin:auto;padding:36px 20px 56px}h1{font-size:clamp(23px,5vw,32px);line-height:1.45;margin:0 0 10px;letter-spacing:.02em}p{font-size:14px;line-height:1.8;margin:0 0 14px;color:#52625a}a{color:#185649;text-underline-offset:4px}header{margin-bottom:28px}.case{background:#fff;border:1px solid #dcded6;border-radius:16px;padding:22px;margin:0 0 22px}h2{margin:0 0 16px;font-size:19px}h3{font-size:17px;margin:24px 0 12px}.pair{display:grid;grid-template-columns:1fr 1fr;gap:16px}.visual{display:flex;flex-direction:column;gap:8px;text-decoration:none;color:inherit}.visual img{width:100%;aspect-ratio:1;object-fit:contain;background:#f1f1eb;border-radius:8px}.label{font-size:12px;font-weight:700;letter-spacing:.08em;color:#67716d}.action{display:block;background:#185649;color:#fff;border-radius:8px;text-align:center;padding:13px 5px;font-size:14px;font-weight:700;line-height:1.5}.before-action{display:block;text-align:center;font-size:14px;line-height:1.5;padding:13px 5px;text-decoration:underline;text-underline-offset:4px}.links{display:flex;flex-wrap:wrap;gap:10px 18px;margin-top:18px;font-size:13px;line-height:1.7}.download{display:block;text-align:center;background:#fff;border:1px solid #b9c4b9;border-radius:10px;padding:17px;font-weight:700;text-decoration:none;margin-top:26px}details{margin-top:22px;font-size:13px;line-height:1.9}summary{cursor:pointer}details p{font-size:13px;margin-top:12px}.source{white-space:pre-wrap;overflow-wrap:anywhere;font:inherit;font-size:15px;line-height:1.95;background:#fff;border:1px solid #dedfd8;border-radius:12px;padding:24px;margin-top:22px}.back{display:inline-block;margin-bottom:26px;font-size:14px}footer{margin-top:18px;font-size:12px;color:#718078}.source code{white-space:pre-wrap}@media(max-width:430px){main{padding:24px 12px 40px}.case{padding:16px 12px}.pair{gap:10px}h2{font-size:17px}.action,.before-action{font-size:12px;padding:11px 3px}.source{padding:18px 14px;font-size:14px}.links{gap:9px 15px}}
+</style><main><a class="back" href="./">比較ページに戻る</a><h1>いそっち｜AI社員の撮影用台本</h1><p>特典の指示文をコピーし、実際に操作しながら撮影するための台本です。</p><div class="source"># いそっち式 AI連携 実践スタートブック｜解説動画の全文台本
+
+状態：本人がこれから撮影。完成解説動画は未受領。提供reference-demo.mp4は実演参考であり、掲載用動画には使わない。今回の制作側では、同じsales.csvの独立集計と表示・保存を検証した。Claude Code→Codexの委任実行は、このケースで使えるプラグインが確認できず未実施。以下の実行場面は、本人PCで実際に成立してから収録する。
+
+端末：PC。Claude Code・Codex CLI・フォルダ操作を伴うため、スマホ全工程対応とはしない。完成HTMLの閲覧はスマホ幅でも確認する。16:9、目安6〜8分＋応答待ち。実演の入力欄と結果を読み取れる大きさで収録する。
+
+## 撮影準備
+
+- ZIPを展開し、index.htmlとdownloads/はじめに.htmlを開けることを確認する。実践する作業場所は、展開したdownloads/practice。同じsales.csvとCLAUDE.mdを使い、途中で別フォルダへ移らない。
+- このpracticeでClaude Codeを開く。Codex公式プラグインがその場所で有効か、/codex:setupで確認する。未導入・無効・未ログインなら、本人が対象と許可内容を確認して準備する。制作側は有効化・新規接続を行っていない。
+- Python 3は再集計用。モデル名を固定せず、実際に利用可能な設定を映す。最強、トークン削減率、無制限、必ず時短とは話さない。
+- 他の会話、アカウント名、メール、認証コード、通知を収録から外す。ログインが必要な場合は認証部分を映さず、完了後の状態から続ける。
+- 初稿で正しければ、そのまま「修正不要」と伝える。間違いを撮影用に作らない。今回配布する独立集計見本へ切り替えて、実行結果のように見せない。
+
+## 1｜同じ数字で、仕事を一つ任せる
+
+**画面**：PCブラウザで教材の表紙→解説動画枠→「数字はある。任せ方で止まる。」→完成見本。完成見本の「独立集計」という表示を残す。
+
+**セリフ全文**
+
+「はい、いそっちです。今回は、Claude CodeとCodexを組み合わせて、AIに仕事を一つ任せてみます。
+
+数字のメモはあるけど、表にまとめるところで止まる。AIに聞いた答えを、また別のAIに貼り直してる。こういうやり取りも、結構めんどくさいですよね。
+
+僕は、設計と最終確認はClaude Code、実際の作業はCodexに分けてます。お互いにチェックしてもらう形ですね。
+
+まずは、このsales.csvをレポートにします。これは架空の練習データで、僕の売上ではありません。ここにあるのは、同じCSVから別に集計した照合用の見本です。今から作る結果と、最後に比べてみます。」
+
+## 2｜キットを展開して、practiceで開く
+
+**コピー元・操作**：教材「01 同じフォルダで準備」→「ガイドと練習キットを保存」。実際のダウンロード先を映す→ZIPを通常の方法で展開→展開フォルダ内のdownloads/practiceを開く。sales.csvとCLAUDE.mdを表示。ターミナルでこのpracticeへ移動して`claude`を起動する。実際のフォルダ移動方法を使い、未確認のメニュー名は読み上げない。
+
+**セリフ全文**
+
+「ここから、ガイドと練習キットを保存します。保存したZIPを展開してください。ZIPの中を見てるだけだと、ファイルの保存先が分かりにくくなるので、先に展開しておきます。
+
+展開したら、downloads、その中のpracticeを開きます。ここにsales.csvと、役割を書いたCLAUDE.mdが入ってます。
+
+Claude Codeも、このpracticeで開きます。今表示されてる作業場所が、このフォルダになっているか見てください。途中で別のフォルダに変えず、この場所で最後までやっていきます。」
+
+**確認**：実際の作業場所がpractice。個人の絶対パスを読者がそのまま打つ指示にしない。
+
+## 3｜連携の状態を確かめる
+
+**コピー元・操作**：教材「初回の準備・公式リンク」を開く。導入済み環境では`/codex:setup`のコピーボタン→Claude Codeの入力欄へ切替→貼付→送信。未導入時は公式READMEの導入3行を上から1行ずつ送り、内容と対象範囲を本人が確認する。`!codex login`は未サインイン時だけ。認証中の収録は止める。
+
+**セリフ全文**
+
+「初回の準備は、この中に入れてます。Claude CodeとCodex、それからNode.jsを使う方法です。まだ入ってない場合は、ここにある公式の案内を確認してください。
+
+僕の画面では、まずこの『/codex:setup』をコピーします。Claude Codeへ切り替えて、下の入力欄に貼って送ります。
+
+ここで、Codexを使える状態かを見ます。候補が出ただけで、全部できたとは決めないようにしてください。未ログインなら、自分のChatGPTアカウントでサインインします。認証の画面は、ここでは映さずに進めます。
+
+準備不足や、プラグインが無効という表示なら、ここで止めて確認します。権限を全部許可したり、別のやり方へ勝手に切り替えたりはしません。」
+
+**分岐**：このpracticeで委任可能と確認できた場合のみ続行。できないときは状態と必要な準備を説明して収録を止める。制作時の環境では、このケースの有効なプラグイン導入は確認できていない。
+
+## 4｜役割メモを読み返す
+
+**コピー元**：教材「02 役割を残す」→「役割を確認する指示文」→「全文をコピー」。
+
+**操作**：教材の全文をコピー→同じpracticeのClaude Codeへ切替→貼付→送信。応答を待つ。フォルダのCLAUDE.mdを開き直し、Claude Codeが設計・最終確認、Codexが作成・修正であることを映す。
+
+**セリフ全文**
+
+「次は、役割を残します。この指示文を開いて、全文をコピーします。同じClaude Codeへ戻って、そのまま送ります。
+
+今回のキットには、役割メモも入れてあります。すでに書いてあることを何回も追加するんじゃなくて、このフォルダのCLAUDE.mdに入ってるか確認してもらいます。
+
+内容は、Claude Codeが設計と最後の確認。Codexがファイルを作ったり、修正したりする担当です。ここですね。実際にファイルを開いて、同じ内容になっているか見ます。
+
+この役割を、次の依頼にも使っていきます。」
+
+**待ち**：応答待ちは編集用に区切る。書き込みが拒否された場合は、保存済みとは話さない。元のメモが同じなら追記せず、読み取り確認で進む。
+
+## 5｜同じCSVから、実際に作ってもらう
+
+**コピー元**：教材「03 レポートを頼む」→「レポート制作の指示文」→「全文をコピー」。
+
+**操作**：全文コピー→同じClaude Code入力欄へ貼付→送信。sales.csvを読んだこと、Codexへ実装を委任したこと、実際に作成したファイルを、機密を含まない必要箇所だけ映す。処理待ちは区切り、実際の応答後に再開する。
+
+**セリフ全文**
+
+「では、この仕事を一つ頼んでみます。『レポート制作の指示文』をコピーして、同じClaude Codeへ送ります。
+
+入力は、ここのsales.csvです。数量と単価を掛けて、総売上、商品別、日別を出してもらいます。最後に、ブラウザで開けるreport.htmlと、同じCSVから作り直せるbuild_report.pyを残すようにしています。
+
+ここで、Claude Codeが作業をCodexへ渡しているかも見ます。使えないのに、Claude Codeだけで作って『連携できました』とはしません。
+
+実際に処理が終わるまで、少し待ちます。」
+
+**実結果が得られた場合の続き**
+
+「処理が返ってきました。今、このpracticeにできたreport.htmlを開きます。さっきの照合用見本じゃなくて、今回生成されたファイルです。まず、総売上と数量、それから商品別の表が表示されているか見ていきます。」
+
+**停止分岐のセリフ**
+
+「今の状態では、Codexへ作業を渡せるところまで確認できていません。ここは連携できたことにせず、必要な準備を確認します。レポートの完成見本は別に開けますが、それを今の実行結果としては使いません。」
+
+## 6｜元CSVから確かめ、必要な所だけ直す
+
+**コピー元**：教材「04 元CSVと照合する」→「確認・修正の指示文」→「全文をコピー」。
+
+**操作**：同じClaude Codeへ全文貼付・送信。元CSVを開き、商品名・数量・単価を見せる。続いて今回生成されたreport.htmlの対応箇所を開く。Claude Codeの独立した計算と比較する。
+
+**セリフ全文**
+
+「作れたら、今度は元の数字と比べます。ここから『確認・修正の指示文』をコピーして、同じClaude Codeへ送ります。
+
+今回なら、総売上は3万4,400円。数量は19、入力は8行です。商品別は、講座が2点で2万4,000円。相談会が3点で9,000円。音声教材が14点で1,400円になっています。
+
+たとえば音声教材は、3、5、2、4を足して14点。それぞれ100円なので、1,400円ですね。見た目がきれいかだけじゃなくて、こういう元の数字と合ってるかを見ます。
+
+売上が大きい順に並んでるか、合計が同じかも確認します。」
+
+**誤りがあった場合**
+
+「ここは、元CSVと違っています。どの行で、何が違っていて、正しい値はいくつか。そこを示して、Codexへ修正を返してもらいます。直した後は、もう一度開いて確かめます。」
+
+**誤りがなかった場合**
+
+「今回の結果では、この数字と並び順が合っていました。修正は不要です。間違いがない所を、無理に直す必要はありません。」
+
+**確認**：日別も11/1=3,300円、11/2=12,500円、11/3=6,200円、11/4=12,400円。誤りを説明用に足さず、実際の結果に合う分岐だけを使う。
+
+## 7｜保存した実物を開き直す
+
+**操作**：同じpracticeをフォルダで開く→sales.csv、build_report.py、report.htmlの3つを確認→report.htmlを閉じて、保存先から再度開く。実際に再集計も収録する場合は、同じpracticeで`python build_report.py`を実行してから開き直す。Python不足なら実行したふりをせず、その旨を伝える。
+
+**セリフ全文**
+
+「最後に、保存したファイルを確認します。sales.csv、build_report.py、report.html。この3つが、同じpracticeにありますね。
+
+一度閉じて、このreport.htmlを保存先から開き直します。日本語が読めること、合計と商品別の表が見えることを確認します。ここまでできたら、この1件は完了です。
+
+CSVを変えた後に作り直すときは、同じフォルダで『python build_report.py』を実行します。元のCSVは、変更前のコピーも残しておいてください。
+
+まずは、この練習を一つ。次は、自分の仕事を一つ選んで、入力と完成条件を同じ形で渡してみてください。
+
+AIに任せる形ができたら、次は何の仕事に使うか。SNSで収益につながる流れは、こちらの7日間の音声で話しています。100円の案内になっているので、気になる方は最後のリンクから見てみてください。」
+
+**完了の条件**：今回生成されたreport.htmlを開き直せて、元CSVと照合できたときだけ完了と話す。CTAは案内ページを開くところまで。購入は実演に含めない。
+
+## 動画受領後
+
+index.htmlの`#explainer`にある`.video-slot`を同じ位置で16:9のvideo要素または許可された埋込みへ差し替える。受領待ちの案内を外し、controls・playsinlineを付ける。PCとスマホで表示、再生、音、シーク、終端を確認する。撮影台本作成済み、撮影成功、動画受領、動画掲載、再生検証を別の状態として記録する。
+</div><footer><a download href="isocchi-integration/%E8%A7%A3%E8%AA%AC%E5%8B%95%E7%94%BB%E5%8F%B0%E6%9C%AC.md">台本ファイルを保存</a></footer></main></html>
