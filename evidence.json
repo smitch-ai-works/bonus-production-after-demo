@@ -1,6 +1,6 @@
 {
   "skill_zip_sha256": "6276be4a33f6def6091902d0a8ae44d1485f8667282871d186537a50d68a44c7",
-  "generation": "Initial fixed-skill production with producer self-review and publisher cross-browser QA. Subsequently updated only for user-authorized provisional video embedding.",
+  "generation": "Current display includes user-requested restoration of an earlier integration reader and manual video placement/layout changes. Not a fresh generation trial of the latest skill.",
   "reference_materials_used": true,
   "final_explainer_videos": {
     "isocchi-integration": "supplied demonstration provisionally embedded",
@@ -143,7 +143,7 @@
     {
       "case": "isocchi-integration",
       "before_url": "https://majestic-heliotrope-375267.netlify.app/",
-      "reader_title": "いそっち式 AI連携 実践スタートブック",
+      "reader_title": "いそっち式 ChatGPT×Claude Code AIに仕事を任せる連携スタートブック",
       "inputs": {
         "script.txt": {
           "sha256": "7661085242d4f612d38506e9c6865b09a2ca23f1d12816b23a193ae7b7bb5569",
@@ -167,6 +167,154 @@
         }
       },
       "reader_files": [
+        {
+          "path": "isocchi-integration/assets/banner.png",
+          "sha256": "fe9250440247cafd60a64eed5e6fd743e9d6e239f991c7c39752650f85f1dde5",
+          "bytes": 2327018
+        },
+        {
+          "path": "isocchi-integration/assets/copy.js",
+          "sha256": "bf7173dd2202be9f5be024a7c9254af3f5e7b480f3d0245ba370b58b54565efb",
+          "bytes": 502
+        },
+        {
+          "path": "isocchi-integration/assets/cta.png",
+          "sha256": "6441779e57f7e036ca04244afa0e870ffb24fcd53112297d05fc4609255e6655",
+          "bytes": 2288545
+        },
+        {
+          "path": "isocchi-integration/assets/explainer-poster.jpg",
+          "sha256": "6e33dbb1fde48502cf7a661bd6105e24045088f844750cfa84c0bb4189dbe81c",
+          "bytes": 262356
+        },
+        {
+          "path": "isocchi-integration/assets/explainer.mp4",
+          "sha256": "bb60194511df827872546603cd6289d4dad565d92a3a7abd79b53598e0820f77",
+          "bytes": 30357065
+        },
+        {
+          "path": "isocchi-integration/assets/login.png",
+          "sha256": "578bbfff48722c87bfcb9949fc0008f3bc8b22d64e1153b6bcdca7db25530985",
+          "bytes": 1645149
+        },
+        {
+          "path": "isocchi-integration/assets/memory.png",
+          "sha256": "958d19f019f89d826c692295e21f91c9925e35dea5dc2057d62848aca8dabb71",
+          "bytes": 1911472
+        },
+        {
+          "path": "isocchi-integration/assets/role-scene.png",
+          "sha256": "9d5b182cf9cedb084a4e812442e6e1bddb21226c7faa98f563b79a516ebd4d41",
+          "bytes": 2178158
+        },
+        {
+          "path": "isocchi-integration/assets/setup.png",
+          "sha256": "860229bb6a2b3fbddbcc4234ed4d8078383713a72093e1c363b9dfdb7099485a",
+          "bytes": 1827726
+        },
+        {
+          "path": "isocchi-integration/assets/style.css",
+          "sha256": "acb323b9f460108fa02bf5c1bb29ef4f03996e0b4912e330de678747ad4a5413",
+          "bytes": 4413
+        },
+        {
+          "path": "isocchi-integration/downloads/isocchi-ai-kit.zip",
+          "sha256": "566ebe2c93a6c514a6855f99750ef8a710a02b07b42e87830b9f718addc0a764",
+          "bytes": 42117270
+        },
+        {
+          "path": "isocchi-integration/downloads/practice/report.html",
+          "sha256": "38f8f1eee56ed3793030da3b621a0dc1c1816776745b8fe1a21d9010f48043b1",
+          "bytes": 5367
+        },
+        {
+          "path": "isocchi-integration/index.html",
+          "sha256": "9e41ee77f63b5aad1c19645db3d7c9805eeba7d602b3906e265e326ae05e55cf",
+          "bytes": 11106
+        }
+      ],
+      "filming_script_sha256": "741d9a260481acd362ae7941b42a5669152bb7b67a789888734cd7572ed2630e",
+      "parent_reader_edits": true,
+      "initial_reader_files": [
+        {
+          "path": "isocchi-integration/assets/app.js",
+          "sha256": "84d9cb95962d48d42b304f561aa53e2280fdfefc39c081faf8e90669564ffd02",
+          "bytes": 907
+        },
+        {
+          "path": "isocchi-integration/assets/banner.png",
+          "sha256": "9099223648f5a02795b301d3e94285ba2f3792ce752cfd80c6fb957d06e9c2fb",
+          "bytes": 2189332
+        },
+        {
+          "path": "isocchi-integration/assets/claude-code.png",
+          "sha256": "d4e5e8e9990ac52f147a74ae80b9e69cdc612264b84a76cdb5c43b53b73a1707",
+          "bytes": 18001
+        },
+        {
+          "path": "isocchi-integration/assets/creator-check.png",
+          "sha256": "10cb06bb5962159af2f72d48c4a129662a746e0d0834a2d93a3e350cbc501b28",
+          "bytes": 2127091
+        },
+        {
+          "path": "isocchi-integration/assets/cta.png",
+          "sha256": "2eb62d3d03229298ba494f220cfaf53c87040de54ddc93142a5317ed92b7e085",
+          "bytes": 1938451
+        },
+        {
+          "path": "isocchi-integration/assets/input-map.png",
+          "sha256": "bf1fc1c0189d3333985e9b8042c2da5726b6e0eb2fff79ca3f46a96b1aad9b60",
+          "bytes": 1534801
+        },
+        {
+          "path": "isocchi-integration/assets/report-preview.png",
+          "sha256": "58aa345f92d052383b89fa3f874eae619bd6be69f873e7bf8ff987fe0508fef6",
+          "bytes": 18170
+        },
+        {
+          "path": "isocchi-integration/assets/report-products.png",
+          "sha256": "59429ffc82734c11948885e8c2fad066e6538b75a3afb43252c7fc55ca6ae85c",
+          "bytes": 46533
+        },
+        {
+          "path": "isocchi-integration/assets/roles.png",
+          "sha256": "e38a67ed55947d27dff5645b1e90c9d0739daaa8baee513021d06d72cdf17500",
+          "bytes": 2079494
+        },
+        {
+          "path": "isocchi-integration/assets/style.css",
+          "sha256": "33801c5f7924c94f17cd87762a74c20e263e56f30da23d47f390c70388409846",
+          "bytes": 4581
+        },
+        {
+          "path": "isocchi-integration/downloads/build_report.py",
+          "sha256": "c20967c854cff773213a2e17c8191ccb89e742f14e57a06a8ddc796ea3000313",
+          "bytes": 6218
+        },
+        {
+          "path": "isocchi-integration/downloads/isocchi-ai-kit.zip",
+          "sha256": "98f16a31df1f395c08e1592d0a71a6ec4b7c203638a25f76ce69b9e6a7697d41",
+          "bytes": 9513746
+        },
+        {
+          "path": "isocchi-integration/downloads/report.html",
+          "sha256": "a5b65e9f67e6c1f54fb9df735e9d22fadc52f040a66fff867ee9cea57a4af464",
+          "bytes": 3907
+        },
+        {
+          "path": "isocchi-integration/downloads/sales.csv",
+          "sha256": "cd6f704dc446df00a4518dfb4c7a41dc27ba15ca6886f947edddb94bc2bd5537",
+          "bytes": 273
+        },
+        {
+          "path": "isocchi-integration/index.html",
+          "sha256": "45859cf0428341c6102e001afda736ecd261bc40853fb97cf300764902e28360",
+          "bytes": 15656
+        }
+      ],
+      "initial_parent_reader_edits": false,
+      "published_update": "User-requested restoration of earlier integration reader plus supplied video.",
+      "before_restore_reader_files": [
         {
           "path": "isocchi-integration/assets/app.js",
           "sha256": "84d9cb95962d48d42b304f561aa53e2280fdfefc39c081faf8e90669564ffd02",
@@ -253,87 +401,13 @@
           "bytes": 262356
         }
       ],
-      "filming_script_sha256": "fdc274a7d2487d68e82d9998f8c140fc8695cedaa935bb5953c2add9eceac544",
-      "parent_reader_edits": true,
-      "initial_reader_files": [
-        {
-          "path": "isocchi-integration/assets/app.js",
-          "sha256": "84d9cb95962d48d42b304f561aa53e2280fdfefc39c081faf8e90669564ffd02",
-          "bytes": 907
-        },
-        {
-          "path": "isocchi-integration/assets/banner.png",
-          "sha256": "9099223648f5a02795b301d3e94285ba2f3792ce752cfd80c6fb957d06e9c2fb",
-          "bytes": 2189332
-        },
-        {
-          "path": "isocchi-integration/assets/claude-code.png",
-          "sha256": "d4e5e8e9990ac52f147a74ae80b9e69cdc612264b84a76cdb5c43b53b73a1707",
-          "bytes": 18001
-        },
-        {
-          "path": "isocchi-integration/assets/creator-check.png",
-          "sha256": "10cb06bb5962159af2f72d48c4a129662a746e0d0834a2d93a3e350cbc501b28",
-          "bytes": 2127091
-        },
-        {
-          "path": "isocchi-integration/assets/cta.png",
-          "sha256": "2eb62d3d03229298ba494f220cfaf53c87040de54ddc93142a5317ed92b7e085",
-          "bytes": 1938451
-        },
-        {
-          "path": "isocchi-integration/assets/input-map.png",
-          "sha256": "bf1fc1c0189d3333985e9b8042c2da5726b6e0eb2fff79ca3f46a96b1aad9b60",
-          "bytes": 1534801
-        },
-        {
-          "path": "isocchi-integration/assets/report-preview.png",
-          "sha256": "58aa345f92d052383b89fa3f874eae619bd6be69f873e7bf8ff987fe0508fef6",
-          "bytes": 18170
-        },
-        {
-          "path": "isocchi-integration/assets/report-products.png",
-          "sha256": "59429ffc82734c11948885e8c2fad066e6538b75a3afb43252c7fc55ca6ae85c",
-          "bytes": 46533
-        },
-        {
-          "path": "isocchi-integration/assets/roles.png",
-          "sha256": "e38a67ed55947d27dff5645b1e90c9d0739daaa8baee513021d06d72cdf17500",
-          "bytes": 2079494
-        },
-        {
-          "path": "isocchi-integration/assets/style.css",
-          "sha256": "33801c5f7924c94f17cd87762a74c20e263e56f30da23d47f390c70388409846",
-          "bytes": 4581
-        },
-        {
-          "path": "isocchi-integration/downloads/build_report.py",
-          "sha256": "c20967c854cff773213a2e17c8191ccb89e742f14e57a06a8ddc796ea3000313",
-          "bytes": 6218
-        },
-        {
-          "path": "isocchi-integration/downloads/isocchi-ai-kit.zip",
-          "sha256": "98f16a31df1f395c08e1592d0a71a6ec4b7c203638a25f76ce69b9e6a7697d41",
-          "bytes": 9513746
-        },
-        {
-          "path": "isocchi-integration/downloads/report.html",
-          "sha256": "a5b65e9f67e6c1f54fb9df735e9d22fadc52f040a66fff867ee9cea57a4af464",
-          "bytes": 3907
-        },
-        {
-          "path": "isocchi-integration/downloads/sales.csv",
-          "sha256": "cd6f704dc446df00a4518dfb4c7a41dc27ba15ca6886f947edddb94bc2bd5537",
-          "bytes": 273
-        },
-        {
-          "path": "isocchi-integration/index.html",
-          "sha256": "45859cf0428341c6102e001afda736ecd261bc40853fb97cf300764902e28360",
-          "bytes": 15656
-        }
-      ],
-      "initial_parent_reader_edits": false,
-      "published_update": "User requested provisional video embedding after initial skill generation; reader text/prompts/images preserved, video section/CSS/offline kit updated."
+      "restored_from": {
+        "url": "https://smitch-ai-works.github.io/bonus-production-review/image-isocchi/integration/",
+        "html_sha256": "cd8654691bcdbb42ca59c640402c0de1c5b38b19cf99ea54688c429abe7ae0ae",
+        "body_copy_preserved": true,
+        "original_skill_zip_url": "https://smitch-ai-works.github.io/bonus-production-review/image-isocchi/tested-skill.zip",
+        "original_skill_zip_sha256": "c840043bdab4f41b528cb85d94ab1e9e704a8f91c0af8feceeca2d508e495e1d"
+      }
     },
     {
       "case": "isocchi-coloring",
@@ -393,6 +467,16 @@
           "bytes": 2582889
         },
         {
+          "path": "isocchi-coloring/assets/explainer-poster.jpg",
+          "sha256": "53e5a77325dbff0fe48d177ca074637f9f9a21b843a51ba005e96fb307344500",
+          "bytes": 457749
+        },
+        {
+          "path": "isocchi-coloring/assets/explainer.mp4",
+          "sha256": "137d550b7ac7e59771de1039da59e6c5f3727833bf3383ab9f425faa24a624c2",
+          "bytes": 49570708
+        },
+        {
           "path": "isocchi-coloring/assets/pdf-preview.png",
           "sha256": "5d55d594e4528cf26a8721406d9c94d9912b0bb3729b045757e945250425767d",
           "bytes": 887194
@@ -414,8 +498,8 @@
         },
         {
           "path": "isocchi-coloring/assets/style.css",
-          "sha256": "a7b95a056abd5ca7caf6bb5703b4381bdfd703b6b21d65e53d1e236b7ead6e1c",
-          "bytes": 6057
+          "sha256": "be15c157005622a9ca7fb5e778f3d21adb6e497cbd72bae92b14ccd5758b853d",
+          "bytes": 6092
         },
         {
           "path": "isocchi-coloring/downloads/coloring-master.png",
@@ -434,8 +518,8 @@
         },
         {
           "path": "isocchi-coloring/downloads/isocchi-coloring-kit.zip",
-          "sha256": "7a1b5d39eb5ff97b64cb73a69ac79bc09183ed5106b3d326cda303cb40423788",
-          "bytes": 72768570
+          "sha256": "875bf088fa2dfb9bb21d583d5385b05c940c73c23afd550660f7de298789754e",
+          "bytes": 72768985
         },
         {
           "path": "isocchi-coloring/downloads/japan-bookmarks-A4.pdf",
@@ -469,18 +553,8 @@
         },
         {
           "path": "isocchi-coloring/index.html",
-          "sha256": "3dcc9b700f86064c119c402507ef1ed62e692eb310edc70385358535aa033de1",
-          "bytes": 20402
-        },
-        {
-          "path": "isocchi-coloring/assets/explainer.mp4",
-          "sha256": "137d550b7ac7e59771de1039da59e6c5f3727833bf3383ab9f425faa24a624c2",
-          "bytes": 49570708
-        },
-        {
-          "path": "isocchi-coloring/assets/explainer-poster.jpg",
-          "sha256": "53e5a77325dbff0fe48d177ca074637f9f9a21b843a51ba005e96fb307344500",
-          "bytes": 457749
+          "sha256": "d187f5536342ff5a09e3c9f5dcde111de1f89a10b4aa5a436d111dccf4244bbb",
+          "bytes": 20400
         }
       ],
       "filming_script_sha256": "21c2bf01940ae055f34aee65c911a7bc62ea3d73d342d08332450b145b8d1055",
@@ -598,7 +672,7 @@
         }
       ],
       "initial_parent_reader_edits": false,
-      "published_update": "User requested provisional video embedding after initial skill generation; reader text/prompts/images preserved, video section/CSS/offline kit updated."
+      "published_update": "User-requested portrait 9:16 video layout; rest of reader unchanged."
     }
   ],
   "initial_generation": "same fixed skill with producer self-review; additional parent cross-browser QA requested producer reinspection before publication; no parent reader edits",
@@ -665,5 +739,51 @@
       "isocchi-integration": 0.5,
       "isocchi-coloring": 120
     }
+  },
+  "display_update_20261109": {
+    "integration": "restored image-isocchi version; supplied landscape video retained",
+    "coloring": "9:16 player, max width 390px, full original video contained",
+    "source_files_copied": [
+      {
+        "path": "assets/banner.png",
+        "sha256": "fe9250440247cafd60a64eed5e6fd743e9d6e239f991c7c39752650f85f1dde5"
+      },
+      {
+        "path": "assets/copy.js",
+        "sha256": "bf7173dd2202be9f5be024a7c9254af3f5e7b480f3d0245ba370b58b54565efb"
+      },
+      {
+        "path": "assets/cta.png",
+        "sha256": "6441779e57f7e036ca04244afa0e870ffb24fcd53112297d05fc4609255e6655"
+      },
+      {
+        "path": "assets/login.png",
+        "sha256": "578bbfff48722c87bfcb9949fc0008f3bc8b22d64e1153b6bcdca7db25530985"
+      },
+      {
+        "path": "assets/memory.png",
+        "sha256": "958d19f019f89d826c692295e21f91c9925e35dea5dc2057d62848aca8dabb71"
+      },
+      {
+        "path": "assets/role-scene.png",
+        "sha256": "9d5b182cf9cedb084a4e812442e6e1bddb21226c7faa98f563b79a516ebd4d41"
+      },
+      {
+        "path": "assets/setup.png",
+        "sha256": "860229bb6a2b3fbddbcc4234ed4d8078383713a72093e1c363b9dfdb7099485a"
+      },
+      {
+        "path": "downloads/practice/report.html",
+        "sha256": "38f8f1eee56ed3793030da3b621a0dc1c1816776745b8fe1a21d9010f48043b1"
+      }
+    ]
+  },
+  "current_distribution_skill": {
+    "path": "bonus-production-latest.zip",
+    "sha256": "b54c5e73645eb98b477f45cd30bf47c49b380e9cd0bed0701a668054897a884b",
+    "bytes": 18626772,
+    "runtime_files": 36,
+    "changes": "Phone demonstration frames use portrait 9:16; PC uses landscape 16:9. Includes current voice-and-copy guidance.",
+    "fresh_generation_test": false
   }
 }
