@@ -52,5 +52,40 @@
   }
   osButtons.forEach(b=>b.addEventListener('click',()=>selectOS(b.dataset.os)));
   selectOS(/Mac|iPhone|iPad/.test(navigator.platform)?'mac':'windows');
+
+  const pcChapterButtons=[...document.querySelectorAll('[data-pc-chapter]')];
+  const pcGuideStatus=document.getElementById('pc-guide-status');
+  function activePCGuide(){return document.getElementById('mac-video').hidden?document.getElementById('pc-guide'):document.getElementById('mac-guide');}
+  function pcChapterTime(button,video){return Number(video.id==='mac-guide'?button.dataset.macTime:button.dataset.windowsTime);}
+  function refreshPCChapters(video=activePCGuide()){
+    if(video!==activePCGuide())return;
+    let active=0;pcChapterButtons.forEach((b,i)=>{if(video.currentTime>=pcChapterTime(b,video))active=i;});
+    pcChapterButtons.forEach((b,i)=>b.setAttribute('aria-pressed',String(i===active)));
+  }
+  for(const video of [document.getElementById('pc-guide'),document.getElementById('mac-guide')]){
+    video.addEventListener('timeupdate',()=>refreshPCChapters(video));
+    video.addEventListener('loadedmetadata',()=>refreshPCChapters(video));
+  }
+  document.querySelectorAll('[data-os]').forEach(button=>button.addEventListener('click',()=>{pcGuideStatus.textContent='';refreshPCChapters();}));
+  pcChapterButtons.forEach(button=>button.addEventListener('click',async()=>{
+    const video=activePCGuide(),time=pcChapterTime(button,video);pcGuideStatus.textContent='';
+    if(video.readyState===0){video.load();await new Promise(resolve=>{video.addEventListener('loadedmetadata',resolve,{once:true});video.addEventListener('error',resolve,{once:true});});}
+    try{await video.play();}catch{pcGuideStatus.textContent='場面を移動しました。動画の再生ボタンを押してください。';}
+    video.currentTime=time;refreshPCChapters(video);
+  }));
+  document.querySelector('.pc-fullscreen').addEventListener('click',async()=>{
+    const video=activePCGuide(),time=video.currentTime;pcGuideStatus.textContent='';
+    try{
+      if(video.requestFullscreen)await video.requestFullscreen();
+      else if(video.webkitEnterFullscreen)video.webkitEnterFullscreen();
+      else throw new Error('Fullscreen unavailable');
+      await video.play();
+      video.currentTime=time;
+    }catch{
+      pcGuideStatus.replaceChildren();
+      const link=document.createElement('a');link.href=(video.currentSrc||video.querySelector('source').src)+'#t='+time.toFixed(1);link.textContent='動画だけの画面を開く';link.target='_blank';link.rel='noopener';pcGuideStatus.append(link);
+    }
+  });
+  refreshPCChapters();
   select(selected);
 })();

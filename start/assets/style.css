@@ -23,3 +23,9 @@
 
 /* Mobile copy sequence */
 @media(max-width:650px){.visual-steps{display:flex;flex-direction:column;align-items:stretch;gap:5px}.visual-steps span{text-align:center}.visual-steps b{text-align:center;transform:rotate(90deg);line-height:1.1}}
+
+/* PC guide chapters */
+.pc-guide-controls{margin:14px 0 28px}.pc-fullscreen{display:block;width:100%;min-height:52px;border:1px solid #aac0d8;border-radius:6px;background:white;color:#194ba4;line-height:1.6;padding:12px 16px;font-family:inherit;font-size:18px;font-weight:700;cursor:pointer}.pc-guide-caption{margin:14px 0 10px!important;font-size:15px!important;line-height:1.8!important;color:#506278}.pc-chapters{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}.pc-chapters button{display:flex;align-items:center;justify-content:center;gap:9px;min-height:58px;padding:10px 8px;border:1px solid #bbccdf;border-radius:6px;background:white;color:#19394f;font-family:inherit;font-size:16px;font-weight:700;line-height:1.5;cursor:pointer}.pc-chapters b{display:grid;place-items:center;background:#dce7f8;color:#245bc4;border-radius:50%;width:28px;height:28px;flex:none}.pc-chapters button[aria-pressed=true]{border-color:#245bc4;background:#e7effd}.pc-chapters button:focus-visible,.pc-fullscreen:focus-visible{outline:3px solid #245bc4;outline-offset:3px}#pc-guide-status{margin-top:9px!important;min-height:0}#pc-guide-status:empty{display:none}
+@media(max-width:650px){.pc-chapters{grid-template-columns:1fr 1fr}.pc-chapters button{justify-content:flex-start;min-height:62px;font-size:15px}.pc-fullscreen{font-size:17px}}
+
+.pc-chapters button{text-wrap:balance}
