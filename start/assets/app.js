@@ -83,7 +83,7 @@
       video.currentTime=time;
     }catch{
       pcGuideStatus.replaceChildren();
-      const link=document.createElement('a');link.href=(video.currentSrc||video.querySelector('source').src)+'#t='+time.toFixed(1);link.textContent='動画だけの画面を開く';link.target='_blank';link.rel='noopener';pcGuideStatus.append(link);
+      const link=document.createElement('a');link.href='watch.html?os='+(video.id==='mac-guide'?'mac':'windows')+'&t='+time.toFixed(1);link.textContent='動画だけの画面を開く';pcGuideStatus.append(link);
       pcGuideStatus.scrollIntoView({block:'nearest'});
     }
   });
