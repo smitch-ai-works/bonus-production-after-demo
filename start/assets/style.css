@@ -12,3 +12,5 @@
 .phrase{display:inline-block;max-width:100%}
 
 @media(max-width:650px){.portrait{max-width:390px}}
+
+.os-picker{display:flex;gap:10px;margin:0 0 14px}.os-picker button{font:inherit;font-size:15px;padding:9px 24px;border:1px solid #aebfd5;border-radius:6px;background:white;color:#143148;min-height:44px}.os-picker button[aria-pressed=true]{background:#143148;border-color:#143148;color:white;font-weight:700}.os-video{margin-bottom:0}.desktop-video-note{margin:10px 0 26px;line-height:1.8}

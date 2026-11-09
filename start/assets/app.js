@@ -38,5 +38,16 @@
     }
   }));
   document.getElementById('download-skill').addEventListener('click',()=>{status.textContent='ダウンロード後は、下の手順に沿ってZIPを展開してください。';});
+  const osButtons=[...document.querySelectorAll('[data-os]')];
+  function selectOS(os){
+    for(const key of ['windows','mac']){
+      const box=document.getElementById(key+'-video');
+      if(key!==os)box.querySelector('video').pause();
+      box.hidden=key!==os;
+    }
+    osButtons.forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.os===os)));
+  }
+  osButtons.forEach(b=>b.addEventListener('click',()=>selectOS(b.dataset.os)));
+  selectOS(/Mac|iPhone|iPad/.test(navigator.platform)?'mac':'windows');
   select(selected);
 })();
