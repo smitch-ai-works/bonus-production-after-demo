@@ -71,7 +71,7 @@
     const video=activePCGuide(),time=pcChapterTime(button,video);pcGuideStatus.textContent='';
     if(video.readyState===0){video.load();await new Promise(resolve=>{video.addEventListener('loadedmetadata',resolve,{once:true});video.addEventListener('error',resolve,{once:true});});}
     try{await video.play();}catch{pcGuideStatus.textContent='場面を移動しました。動画の再生ボタンを押してください。';}
-    video.currentTime=time;refreshPCChapters(video);
+    video.currentTime=time;refreshPCChapters(video);video.scrollIntoView({block:'start'});
   }));
   document.querySelector('.pc-fullscreen').addEventListener('click',async()=>{
     const video=activePCGuide(),time=video.currentTime;pcGuideStatus.textContent='';
@@ -84,6 +84,7 @@
     }catch{
       pcGuideStatus.replaceChildren();
       const link=document.createElement('a');link.href=(video.currentSrc||video.querySelector('source').src)+'#t='+time.toFixed(1);link.textContent='動画だけの画面を開く';link.target='_blank';link.rel='noopener';pcGuideStatus.append(link);
+      pcGuideStatus.scrollIntoView({block:'nearest'});
     }
   });
   refreshPCChapters();
