@@ -7,7 +7,10 @@
   let selected=matchMedia('(max-width:650px)').matches?'phone':'pc';
   function select(route,scroll=false){
     selected=route;
-    for(const key of ['pc','phone']) document.getElementById(key).hidden=key!==route;
+    for(const key of ['pc','phone']){
+      const panel=document.getElementById(key);panel.hidden=key!==route;
+      if(panel.hidden)panel.querySelectorAll('video').forEach(v=>v.pause());
+    }
     controls.forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.route===route)));
     if(scroll) document.getElementById(route).scrollIntoView({block:'start'});
   }
